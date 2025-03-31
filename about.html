@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Godfrey Livumbazi</title>
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <div id="header"></div>
+    
+        <main>
+            <section class="about-content">
+                <h1>About Me</h1>
+        <p>Innovative IT Professional | E-Commerce | Web Development | SEO & Branding</p>
+                <h2>Who I Am</h2>
+                <p>I am a highly skilled IT professional with a Bachelor's degree in Computer Science from Maasai Mara University. With experience in IT, software development, e-commerce, and personal branding, I have helped businesses grow and optimize their digital presence.</p>
+            
+                <h2>My Journey</h2>
+                <p>Having worked as a System Administrator in Qatar and Kenya, I specialize in e-commerce management, SEO, remote IT support, and full-stack web development. I am passionate about technology and digital transformation, ensuring clients get the best solutions for their business needs.</p>
+            
+                <h2>Skills & Expertise</h2>
+                <ul>
+                    <li>Website & Application Development</li>
+                    <li>E-Commerce Management</li>
+                    <li>SEO & Digital Marketing</li>
+                    <li>Graphic Design & Branding</li>
+                    <li>Virtual Assistance & Remote IT Support</li>
+                    <li>Full-Stack Development</li>
+                </ul>
+            </section>
+        </main>
+
+        <aside class="right-nav">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="resume.pdf" target="_blank">Download Resume</a></li>
+                <li><a href="mailto:godfreyw54@gmail.com">Email Me</a></li>
+                <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                <li><a href="https://github.com">GitHub</a></li>
+            </ul>
+        </aside>
+    </div>
+    <div id="footer"></div>
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+    
+</body>
+</html>
